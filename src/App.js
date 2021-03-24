@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavTabs from "./components/NavTabs";
-import Home from "./components/pages/Home";
-import Welcome from "./components/pages/Welcome";
-import Blog from "./components/pages/Blog";
-import Contact from "./components/pages/Contact";
+import Home from "./pages/Home";
+import Resume from "./pages/Resume";
+//import Blog from "./pages/Blog";
+//import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
       <div>
         <NavTabs />
         <Route exact path="/" component={Home} />
-        <Route exact path="/welcome" component={Welcome} />
-        <Route exact path="/blog" component={Blog} />
-        <Route path="/contact" component={Contact} />
+        <Route exact path="/resume" component={Resume} />
+        {/* <Route exact path="/blog" component={Blog} />
+        <Route path="/contact" component={Contact} /> */}
       </div>
     </Router>
   );
