@@ -24,17 +24,17 @@ function NavTabs() {
             location.pathname === "/welcome" ? "nav-link active" : "nav-link"
           }
         >
-          Welcome
+          Resume
         </Link>
       </li>
       <li className="nav-item">
         <Link
-          to="/blog"
+          to="/resume"
           className={
-            location.pathname === "/blog" ? "nav-link active" : "nav-link"
+            location.pathname === "/resume" ? "nav-link active" : "nav-link"
           }
         >
-          Blog
+          Projects
         </Link>
       </li>
       <li className="nav-item">
@@ -44,7 +44,8 @@ function NavTabs() {
             location.pathname === "/contact" ? "nav-link active" : "nav-link"
           }
         >
-          Contact
+          {" "}
+          Github
         </Link>
       </li>
       <li className="nav-item">
@@ -56,7 +57,7 @@ function NavTabs() {
               : "nav-link"
           }
         >
-          Learn
+          Linked In
         </Link>
       </li>
     </ul>
